@@ -1,0 +1,9 @@
+# Keep implementation and private data out of this documentation showcase
+.env
+.env.*
+*.pkl
+*.sqlite3
+*.db
+*.log
+__pycache__/
+private/
