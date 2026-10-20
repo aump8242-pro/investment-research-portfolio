@@ -1,0 +1,317 @@
+{
+  "review_date": "2026-10-21",
+  "scope": "Verification of saved reports and equity curves; strategy was not rerun and market data was not redownloaded in this review.",
+  "data_source": "Upstox primary Indian OHLC with Yahoo supplemental history; global series and FX per source report. Not a Yahoo-only backtest.",
+  "domestic_scenarios": [
+    {
+      "name": "script_same_close",
+      "start": "2021-01-01",
+      "end_inclusive": "2026-10-01",
+      "sessions": 1426,
+      "initial_capital": 1000000,
+      "final_equity": 4567551.24,
+      "net_profit": 3567551.24,
+      "total_return_pct": 356.755124,
+      "cagr_pct": 30.23802335763539,
+      "max_drawdown_pct": -21.256765913919672,
+      "max_drawdown_date": "2026-03-30",
+      "volatility_annual_pct": 17.38194440002319,
+      "sharpe_zero_risk_free": 1.632303690272836,
+      "estimated_charges": 29890.95,
+      "orders": 527,
+      "completed_positions": 116,
+      "win_rate_pct": 62.93103448275862,
+      "profit_factor": 4.053603520392204,
+      "average_invested_pct": 96.96016686371462,
+      "final_holdings": 6,
+      "final_cash": 1015.8899999998976,
+      "skipped_sessions": 0,
+      "slippage_bps_per_side": 0,
+      "orders_above_1pct_daily_volume": 102
+    },
+    {
+      "name": "next_open",
+      "start": "2021-01-01",
+      "end_inclusive": "2026-10-01",
+      "sessions": 1426,
+      "initial_capital": 1000000,
+      "final_equity": 4423662.339999999,
+      "net_profit": 3423662.339999999,
+      "total_return_pct": 342.3662339999999,
+      "cagr_pct": 29.514959906464867,
+      "max_drawdown_pct": -20.68504160213559,
+      "max_drawdown_date": "2026-03-30",
+      "volatility_annual_pct": 17.54366176676584,
+      "sharpe_zero_risk_free": 1.5864942882417354,
+      "estimated_charges": 29397.57,
+      "orders": 524,
+      "completed_positions": 118,
+      "win_rate_pct": 63.559322033898304,
+      "profit_factor": 4.013969939468095,
+      "average_invested_pct": 96.9296406633959,
+      "final_holdings": 6,
+      "final_cash": 13220.519999998622,
+      "skipped_sessions": 0,
+      "slippage_bps_per_side": 0,
+      "orders_above_1pct_daily_volume": 102
+    },
+    {
+      "name": "next_open_5bps",
+      "start": "2021-01-01",
+      "end_inclusive": "2026-10-01",
+      "sessions": 1426,
+      "initial_capital": 1000000,
+      "final_equity": 4331159.652495006,
+      "net_profit": 3331159.652495006,
+      "total_return_pct": 333.1159652495006,
+      "cagr_pct": 29.039793029514538,
+      "max_drawdown_pct": -20.813648242140115,
+      "max_drawdown_date": "2022-06-20",
+      "volatility_annual_pct": 17.537491717086702,
+      "sharpe_zero_risk_free": 1.565676555341216,
+      "estimated_charges": 29333.7,
+      "orders": 526,
+      "completed_positions": 118,
+      "win_rate_pct": 63.559322033898304,
+      "profit_factor": 3.92709383299388,
+      "average_invested_pct": 96.91878723810777,
+      "final_holdings": 6,
+      "final_cash": 13934.832495005568,
+      "skipped_sessions": 0,
+      "slippage_bps_per_side": 5,
+      "orders_above_1pct_daily_volume": 102
+    }
+  ],
+  "global_10y": {
+    "start": "2016-10-21",
+    "end_inclusive": "2026-10-20",
+    "first_execution_session": "2016-10-21",
+    "last_nse_session": "2026-10-19",
+    "last_us_session": "2026-10-19",
+    "initial_capital": 1000000,
+    "final_equity": 4282768.971466516,
+    "net_profit": 3282768.971466516,
+    "total_return_pct": 328.2768971466516,
+    "cagr_pct": 15.659447609794451,
+    "max_drawdown_pct": -22.757312229055916,
+    "max_drawdown_date": "2026-10-19",
+    "max_event_drawdown_pct": -23.166982870188292,
+    "annualized_volatility_pct": 14.286238690849927,
+    "sharpe_zero_risk_free": 1.0782097623608136,
+    "estimated_charges": 46486.06,
+    "slippage_bps_per_side": 5.0,
+    "orders": 1026,
+    "completed_positions": 204,
+    "open_positions": 6,
+    "us_orders": 168,
+    "closed_position_win_rate_pct": 57.35294117647059,
+    "profit_factor": 2.617075064574297,
+    "average_invested_pct": 94.84282700474147,
+    "pending_orders": 0,
+    "orders_over_5pct_daily_volume": 178,
+    "orders_over_entire_daily_volume": 60,
+    "maximum_daily_volume_fraction": 294.09090909090907,
+    "benchmark": {
+      "symbol": "NIFTYBEES.NS",
+      "final_equity": 2903842.39085,
+      "total_return_pct": 190.384239085,
+      "cagr_pct": 11.250928095620871,
+      "max_drawdown_pct": -36.33456835761061,
+      "costs": "5 bps initial buy slippage; no benchmark brokerage or forced liquidation"
+    },
+    "validation": {
+      "cash_reconciles": true,
+      "minimum_cash": 1.5578575416002423,
+      "maximum_holdings": 6,
+      "all_signals_precede_execution": true,
+      "all_fills_have_observed_positive_volume_bars": true,
+      "fx_strictly_prior_date": true,
+      "price_discontinuity_deferrals": 0,
+      "eligible_etfs_at_start": 10
+    },
+    "assumptions": [
+      "Current global 54-ETF universe held constant as a research selection; survivorship and universe-selection bias remain.",
+      "Upstox primary Indian OHLC; Yahoo positive-volume missing sessions only. Broker reference-session calendar.",
+      "Corrupt legacy histories quarantined: MNC before 2022-08-05; GILT5YBEES before 2021-04-07; MIDSELIETF before 2018-05-09.",
+      "MIDSELIETF existed earlier, but its earlier history is withheld because it contains unresolved mixed price scales. This delays its eligibility.",
+      "Split-adjusted prices in normalized units; integer-unit counts are normalized and are not literal historical pre-split units.",
+      "Pre-19-Dec-2019 Upstox raw volumes for NIFTYBEES/BANKBEES/PSUBNKBEES multiplied by 10 and GOLDBEES by 100 to match adjusted price/quantity units; original volumes retained.",
+      "54-ETF production rules reused, 262 forward-filled NSE-grid observations; no pre-history backfill or substitute index proxies.",
+      "Prior-completed-date signals, next available daily-open proxy at NSE 09:20 IST / US 09:30 New York; chronological market processing.",
+      "Actual NSE opening auction is earlier; daily open is a fill proxy, not an observed 09:20 price. Special-session opening times are not modeled.",
+      "5 bps adverse slippage each side, estimated current-schedule Indian broker charges applied historically; no exact historical tariff reconstruction.",
+      "US OHLC translated to INR with strictly earlier-date USDINR daily close, maximum 7 calendar days old.",
+      "US candles are checked for completion at their original download timestamps; the unfinished 20-Oct-2026 US session is excluded even on later cached reruns.",
+      "Dividends and cash distributions not reinvested or credited; price-return analysis. Fund expenses already embedded in traded prices.",
+      "US commissions, FX conversion spreads, remittance costs and investor capital-gains taxes excluded; cash interest zero.",
+      "No partial fills, bid/ask/depth or settlement model; large fractions of daily volume are flagged. Stops act on daily closes, not intraday extremes.",
+      "End equity includes marked open positions and no final liquidation fees. EOD dates combine NSE and same-date US close, which occurs next IST day.",
+      "QQQM/MAGS/QQQJ/KTEC enter only after available history; MAGS/KTEC mandates differ from the old Indian ETF replacements.",
+      "Volatility and Sharpe use 252 sessions/year and zero risk-free rate on the union-session EOD series."
+    ]
+  },
+  "earlier_global_2021_2026": {
+    "start": "2021-01-01",
+    "end": "2026-10-01",
+    "initial_capital": 1000000,
+    "final_equity": 3096067.285690659,
+    "total_return_pct": 209.60672856906592,
+    "orders": 674,
+    "us_orders": 175,
+    "estimated_charges": 26809.46,
+    "pending_orders": 2,
+    "validation": {
+      "cash_reconciles": true,
+      "minimum_cash": 0.10432000007131137,
+      "maximum_holdings": 6,
+      "all_signals_precede_execution": true
+    },
+    "notes": [
+      "NSE 09:20 and US 09:30 historical-open model processed in time order; 5 bps slippage per side.",
+      "USD OHLC multiplied by strictly prior-date FX close. No same-session future FX.",
+      "US fees, FX conversion spreads, taxes, dividends and settlement delays excluded.",
+      "Historical present-day universe; no prices before ETF inception; 262 NSE-grid observations after forward fill, matching the dashboard.",
+      "MAGS is a different mandate from NYSE FANG+; KTEC is Hang Seng TECH, not broad Hang Seng.",
+      "Daily OHLC proxy, full fills, no depth/partial-fill model. Returns are research estimates."
+    ]
+  },
+  "review_checks": [
+    {
+      "case": "script_same_close",
+      "equity_rows": 1426,
+      "ending_equity": 4567551.24,
+      "cagr_pct_recomputed": 30.23802335763539,
+      "max_drawdown_pct_recomputed": -21.256765913919672,
+      "equity_cash_holdings_and_charge_checks": "passed"
+    },
+    {
+      "case": "next_open",
+      "equity_rows": 1426,
+      "ending_equity": 4423662.339999999,
+      "cagr_pct_recomputed": 29.514959906464867,
+      "max_drawdown_pct_recomputed": -20.685041602135577,
+      "equity_cash_holdings_and_charge_checks": "passed"
+    },
+    {
+      "case": "next_open_5bps",
+      "equity_rows": 1426,
+      "ending_equity": 4331159.652495006,
+      "cagr_pct_recomputed": 29.039793029514538,
+      "max_drawdown_pct_recomputed": -20.813648242140115,
+      "equity_cash_holdings_and_charge_checks": "passed"
+    },
+    {
+      "case": "global_10y",
+      "equity_rows": 2550,
+      "ending_equity": 4282768.971466516,
+      "cagr_pct_recomputed": 15.659447609794451,
+      "max_drawdown_pct_recomputed": -22.757312229055916,
+      "equity_cash_holdings_and_charge_checks": "passed"
+    }
+  ],
+  "domestic_annual_returns": [
+    {
+      "year": 2021,
+      "return_pct": 26.162667509500025,
+      "pnl": 261626.6750950003,
+      "ending_equity": 1261626.6750950003
+    },
+    {
+      "year": 2022,
+      "return_pct": 8.927025161505874,
+      "pnl": 112625.73073000064,
+      "ending_equity": 1374252.405825001
+    },
+    {
+      "year": 2023,
+      "return_pct": 39.71929145158133,
+      "pnl": 545843.3183500003,
+      "ending_equity": 1920095.7241750013
+    },
+    {
+      "year": 2024,
+      "return_pct": 35.84565980587904,
+      "pnl": 688270.9812350005,
+      "ending_equity": 2608366.705410002
+    },
+    {
+      "year": 2025,
+      "return_pct": 27.04944148369268,
+      "pnl": 705548.6256600013,
+      "ending_equity": 3313915.331070003
+    },
+    {
+      "year": 2026,
+      "return_pct": 30.69614699831673,
+      "pnl": 1017244.321425003,
+      "ending_equity": 4331159.652495006
+    }
+  ],
+  "global_annual_returns": [
+    {
+      "year": "2016-12-31",
+      "strategy_return_pct": -5.701344536499997,
+      "benchmark_return_pct": -7.164850914999999
+    },
+    {
+      "year": "2017-12-31",
+      "strategy_return_pct": 24.690132748511907,
+      "benchmark_return_pct": 29.87760053533608
+    },
+    {
+      "year": "2018-12-31",
+      "strategy_return_pct": -3.803471717909213,
+      "benchmark_return_pct": 4.794510273892838
+    },
+    {
+      "year": "2019-12-31",
+      "strategy_return_pct": 1.3144334182500383,
+      "benchmark_return_pct": 13.63747839812859
+    },
+    {
+      "year": "2020-12-31",
+      "strategy_return_pct": 20.22015490455784,
+      "benchmark_return_pct": 15.423044916116236
+    },
+    {
+      "year": "2021-12-31",
+      "strategy_return_pct": 28.46031592817151,
+      "benchmark_return_pct": 25.973089431239217
+    },
+    {
+      "year": "2022-12-31",
+      "strategy_return_pct": 9.226895478912844,
+      "benchmark_return_pct": 5.458010254612944
+    },
+    {
+      "year": "2023-12-31",
+      "strategy_return_pct": 41.75368388339172,
+      "benchmark_return_pct": 21.010124443091076
+    },
+    {
+      "year": "2024-12-31",
+      "strategy_return_pct": 25.539899926170364,
+      "benchmark_return_pct": 10.35645156852998
+    },
+    {
+      "year": "2025-12-31",
+      "strategy_return_pct": 35.09404146212047,
+      "benchmark_return_pct": 11.66073278245252
+    },
+    {
+      "year": "2026-12-31",
+      "strategy_return_pct": -7.843036727779085,
+      "benchmark_return_pct": -11.550285508629656
+    }
+  ],
+  "source_sha256": {
+    "etf_momentum/comparison.json": "b3d355ed1d694e84dd994d2981431ac0474a18a7930174c1a161f53cc6a8916a",
+    "etf_momentum/REPORT.md": "6469b69c5c9812a62f9b92e9d8a5816a7db62787c2bf83b8b8c274b174467f21",
+    "etf_momentum/validation.json": "1858928b7eec135b994bf5856eab2818fee364f1e338cc21bef0fa91193f35bc",
+    "etf_momentum/next_open_5bps/equity.csv": "1e8c2f1c60ffcc2f51c5eef4d6ab0aee1032845ea980c08c286ad7b34ac3b4b8",
+    "etf_backtest_10y_20261021/results.json": "72134ca8c6e9d89f0961abe628088748369a6be4efc4c8b5cbfd08e1739cef38",
+    "etf_backtest_10y_20261021/REPORT.md": "61ebb4d81670c4abfc617d7b20b0b13dae90799dd758af125504df2f0aa18b45",
+    "etf_backtest_10y_20261021/equity_daily.csv": "684aa95545b6815ab0641c47303e6966b8e7fecaa6d7021acfe0c02d3c33c0df",
+    "etf_momentum_global/results.json": "3225b5f320673aff9479b0f2b415c98a60320d9d1470c8f65cfdc89cd6784302"
+  }
+}
