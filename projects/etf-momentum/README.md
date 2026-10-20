@@ -1,27 +1,27 @@
 # ETF Momentum and Portfolio Analytics
 
-## Purpose
+## Investment question
 
-Provide a single workspace for monitoring an ETF model portfolio, reviewing allocation activity and exporting investment reports.
+Can a rules-based rotation across ETFs combine momentum selection with risk controls and clear portfolio reporting?
 
-## How it works
+## Research highlights
 
-1. Load cached market history and map instruments.
-2. Refresh domestic ETF data through Upstox and obtain global ETF inputs through a separate data adapter.
-3. Pass history and quotes to the portfolio engine.
-4. Save portfolio state and serve a local browser dashboard.
-5. Export trade and equity records for review.
+- Domestic next-open test with 5 bps slippage: **29.04% model CAGR**, **20.81% maximum drawdown**, 2021 to 1 October 2026.
+- Optimistic same-close reference: **30.24% CAGR**; theoretical signal-close fills.
+- Separate global ten-year extension: **15.66% CAGR versus 11.25% NIFTYBEES**, 2016 to 20 October 2026.
 
-## Implementation evidence
+These are uncapped historical simulations with liquidity and data limitations, not live or production performance. The domestic and global universes differ. See the [full comparison](../../RESULTS.md) before interpreting the headline figures.
 
-The reviewed server implements a SQLite-backed store interface, background refresh, market-data validation, pause/resume controls and CSV exports. It also has a backtest endpoint that expects `comparison.json` and model-level `equity.csv` files. Those result files were not provided.
+## Portfolio process
 
-The data path includes historical USD/INR conversion and aligning global observations with the domestic trading calendar. Broker calls in the reviewed server use GET requests; trading is modelled by a paper engine.
+The ten-year global model combines short- and long-horizon momentum, selects up to six ETFs, checks a 200-day moving-average entry filter, resizes monthly and evaluates daily-close stops. Eligibility grows with available history. A model portfolio records cash, holdings, charges and trade activity.
 
-## What makes it useful
+## Dashboard
 
-It connects portfolio construction concepts with the practical work of collecting data, maintaining state and communicating investment activity.
+The reviewed server refreshes domestic history through Upstox, accesses global ETF and FX data through a separate adapter, and passes prices to the portfolio engine. It uses a SQLite-backed store interface, background refresh, market-data validation, pause/resume controls and CSV exports. Its backtest endpoint reads saved comparison and equity files.
 
-## Scope
+## Evidence and scope
 
-This is a documentation-only showcase of a research implementation. The strategy, engine and frontend are separate dependencies and are not published here. Full-system execution and live investment performance have not been verified. See [results](../../RESULTS.md).
+[Metrics, annual returns and verification](../../evidence/etf-backtest-summary.json) support the published figures. Indian histories are Upstox-primary with Yahoo supplements. A full Yahoo-only replay was not performed for this update.
+
+Full implementation code and raw datasets are excluded from the public showcase. This repository provides research documentation and aggregate evidence, not a runnable deployment.
