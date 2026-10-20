@@ -6,9 +6,6 @@ Investment research by Aum K. Patel, connecting ETF allocation, strategy evaluat
 
 **29.04% model CAGR and 20.81% maximum drawdown** in the domestic ETF momentum test from **1 January 2021 to 1 October 2026**, using prior-session signals, next-open fills, 5 bps slippage per side and estimated broker charges. INR 10 lakh grew to INR 43.31 lakh in this historical simulation.
 
-These are uncapped model returns: two trades exceeded reported full-day volume. They are not live or capacity-validated returns. The optimistic same-close reference returned 30.24% CAGR, but assumes fills at the same close that generated the signal.
-
-The separate global ten-year test returned **15.66% CAGR versus 11.25% for NIFTYBEES buy-and-hold**, with 22.76% versus 36.33% maximum EOD drawdown. Its instruments, dates and execution model differ from the domestic test.
 
 ## Projects
 
