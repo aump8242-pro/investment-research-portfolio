@@ -14,7 +14,7 @@ Investment research by Aum K. Patel, connecting ETF allocation, strategy evaluat
 | [ETF Momentum and Portfolio Analytics](projects/etf-momentum/README.md) | Momentum rotation, model portfolios and investment reporting |
 | [Equity Strategy Research](projects/equity-strategies/README.md) | Entry rules, position sizing, costs and exit management |
 | [Opening Range Breakout Research](projects/opening-range/README.md) | Early-session price and volume signals |
-| [Options Data Collection](projects/options-data/README.md) | Recorded derivatives sessions for future analysis |
+| [Options Greeks and Premium Behaviour Research](projects/options-data/README.md) | In-development analysis of Greeks, premiums, IV and open interest across three indices |
 
 ## Read the results
 
