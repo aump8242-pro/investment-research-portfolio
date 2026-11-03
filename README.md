@@ -1,6 +1,6 @@
 # Systematic Investment Research Portfolio
 
-Investment research by Aum K. Patel, connecting ETF allocation, strategy evaluation and portfolio reporting.
+Investment research by Aum K. Patel, covering company valuation, ETF allocation, strategy evaluation and portfolio reporting.
 
 ## Featured result
 
@@ -11,6 +11,7 @@ Investment research by Aum K. Patel, connecting ETF allocation, strategy evaluat
 
 | Project | Focus |
 | --- | --- |
+| [Jio Platforms Equity Valuation](projects/jio-platforms/README.md) | Excel operating forecast, DCF valuation, scenarios and Airtel peer comparison |
 | [ETF Momentum and Portfolio Analytics](projects/etf-momentum/README.md) | Momentum rotation, model portfolios and investment reporting |
 | [Equity Strategy Research](projects/equity-strategies/README.md) | Entry rules, position sizing, costs and exit management |
 | [Opening Range Breakout Research](projects/opening-range/README.md) | Early-session price and volume signals |
